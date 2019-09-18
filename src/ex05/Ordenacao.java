@@ -1,10 +1,8 @@
 package ex05;
 
-import java.util.ArrayList;
-
 public class Ordenacao {
 
-    public static void BubbleSortCrescenteVetor(int vet[]) {
+    public static void bubbleSortCrescenteVetor(int vet[]) {
         int i, j, n;
         n = vet.length;
         for (i = 0; i < n; i++) {
