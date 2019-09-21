@@ -85,7 +85,7 @@ public class Busca {
         int count = 0;
         int resto;
 
-        resto = x / 2;
+        resto = x % 2;
 
         return (resto == 0);
     }
