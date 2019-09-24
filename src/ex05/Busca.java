@@ -10,19 +10,17 @@ public class Busca {
         int meio = (inicio + fim) / 2;
         while (inicio <= fim && achou == 0) {
             if (X[meio] == np) {
-                achou = 1;
+                return meio;
             } else {
                 if (np < X[meio]) {
                     fim = meio - 1;
-                    meio = (inicio + fim) / 2; //Falta esta linha no código do livro
+                    meio = (inicio + fim) / 2;
                 } else {
                     inicio = meio + 1;
                     meio = (inicio + fim) / 2;
                 }
+                return -1;
             }
-        }
-        if (achou == 1) {
-            return meio;
         }
         return -1;
     }
