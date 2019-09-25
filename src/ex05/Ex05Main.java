@@ -11,7 +11,7 @@ public class Ex05Main {
 
     public static void main(String[] args) {
 
-        int n = 4;
+        int n = 15;
         int vet[] = new int[n];
         int i, num, np;
         int existe = 1;
