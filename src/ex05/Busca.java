@@ -2,17 +2,17 @@ package ex05;
 
 public class Busca {
 
-    public static int buscaBinaria(int X[], int np) {
+    public static int buscaBinaria(int X[], int numProcurado) {
         // Buscando o número digitado no vetor
-        int achou = 0;
+        boolean achou = false;
         int inicio = 0;
-        int fim = X.length;
+        int fim = X.length - 1;
         int meio = (inicio + fim) / 2;
-        while (inicio <= fim && achou == 0) {
-            if (X[meio] == np) {
-                achou = 1;
+        while (inicio <= fim && achou == false) {
+            if (X[meio] == numProcurado) {
+                achou = true;
             } else {
-                if (np < X[meio]) {
+                if (numProcurado < X[meio]) {
                     fim = meio - 1;
                     meio = (inicio + fim) / 2;
                 } else {
@@ -21,13 +21,10 @@ public class Busca {
                 }
             }
         }
-        if (achou == 1) {
+        if (achou == true) {
             return meio;
         }
-        if (achou == 0){
-            return -1;
-        }
-        return -1;
+        else return -1;
     }
 
     public static int buscaSequencial(int X[], int np) {
