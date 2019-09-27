@@ -1,4 +1,4 @@
-package ex03;
+package Questao3;
 
 public class Produto {
 

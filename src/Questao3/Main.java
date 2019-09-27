@@ -1,8 +1,8 @@
-package ex03;
+package Questao3;
 
-import static ex03.Busca.NumeroDeComparacoesBuscaBinaria;
-import static ex03.Busca.NumeroDeComparacoesBuscaSequencial;
-import static ex03.Ordenacao.BubbleSortCrescente;
+import static Questao3.Busca.NumeroDeComparacoesBuscaBinaria;
+import static Questao3.Busca.NumeroDeComparacoesBuscaSequencial;
+import static Questao3.Ordenacao.BubbleSortCrescente;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 

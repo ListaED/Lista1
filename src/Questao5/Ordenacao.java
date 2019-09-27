@@ -1,4 +1,4 @@
-package ex05;
+package Questao5;
 
 public class Ordenacao {
 
